@@ -1,162 +1,199 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<!DOCTYPE html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-  <title>Happy Birthday!!! :)</title>
-  <!-- Google Font -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>Happy Birthday, Rivaaa! ♡</title>
+
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-  <!-- My Style -->
-  <link rel="stylesheet" href="./style/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/main.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script src="./script/main.js" defer></script>
 </head>
 
 <body>
+  <audio class="song" loop preload="auto">
+    <source src="./music/sampai jadi debu.mp4" type="audio/mpeg">
+  </audio>
 
-    <audio class="song" loop autoplay>
-        <source src="./music/happy-birthday.mp3">
-        </source>
-        Your browser isn't invited for super fun audio time.
-    </audio>
+  <main>
+    <section class="container" id="birthday">
+      <!-- PEMBUKA -->
+      <div class="intro">
+        <h1 class="one">
+          Hi, <span id="name">Alriva Rizkiya Hanifa</span>!
+        </h1>
+        <p class="two">I really like your name, by the way! ♡</p>
+      </div>
 
-    <div class="container">
-        <div class="one">
-            <h1 class="one">
-                Hi
-                <span id="name">Alriva Rizkiya Hanifa</span>
-            </h1>
-            <p class="two" id="greetingText">I really like your name btw!</p>
-        </div>
+      <!-- UCAPAN -->
+      <div class="three">
+        <p>It's your birthday!! 🎂</p>
+      </div>
 
-        <div class="three">
-            <p>It's your birthday!! :D</p>
-        </div>
-
-        <div class="four">
-            <div class="text-box">
-                <p class="hbd-chatbox">
-                Happy birthday to youu! 
-                </p>
-                <p class="fake-btn">Send</p>
-            </div>
-        </div>
-
-        <div class="five">
-            <p class="idea-1">semoga hari hari mu selalu menyenangkan.</p>
-            <p class="idea-2">sehat sehat besttt.</p>
-            <p class="idea-3">
-                khusus untuk rivaaa<br>
-                <strong>special</strong>
-                .
-            </p>
-            <p class="idea-4">Because,</p>
-            <p class="idea-5">
-                You are Special
-                <span>:)</span>
-            </p>
-            <p class="idea-6">
-                <span>S</span>
-                <span>O</span>
-            </p>
-        </div>
-
-        <div class="six">
-            <img src="./img/rivaaaaa1.jpeg" alt="profile" class="profile-picture" id="imagePath"/>
-                        <img src="./img/rivaaa3.jpeg" alt="profile" class="profile-picture" id="imagePath"/>
-            <img src="./img/rivaa2.jpeg" alt="profile" class="profile-picture" id="imagePath"/>
-
-            <img src="img/hat.svg" alt="hat" class="hat" />
-            <img src="img/hat.svg" alt="hat" class="hat" />
-
-            <div class="wish">
-                <h3 class="wish-hbd">Happy Birthday!</h3>
-            </div>
-        </div>
-
-        <div class="seven">
-            <div class="baloons">
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-            </div>
-        </div>
-
-        <div class="eight">
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-        </div>
-
-        <div class="nine">
-            <p>Okay, now come back and tell me if you liked it.</p>
-            <p id="replay">Or click, if you want to watch it again.</p>
-            <p class="last-smile">:)</p>
-        </div>
+      <!-- PESAN SPESIAL -->
+      <div class="four">
+        <div class="text-box">
+          <p class="hbd-chatbox">happy birthday, youu! 🎂🤍
+hari ini emang hari spesial kamu, 
+tapi aku juga mau bilang makasih karena 
+kamu udah hadir di dunia ini.
+mungkin buat sebagian orang hari ini cuma tanggal biasa, 
+tapi buat aku, hari ini adalah hari lahir seseorang 
+yang punya tempat tersendiri di hidup aku.
+sometimes, aku suka kepikiran kalau waktu 
+ternyata berjalan secepat ini.rasanya baru kemarin kita ketawa bareng, 
+cerita hal-hal random, dan ngelewatin hari tanpa 
+mikirin kalau suatu saat semuanya bakal berubah.
+sekarang kita makin gede, 
+punya kesibukan masing-masing, 
+dan perlahan-lahan hidup ngajarin kita banyak hal.
+jujur, aku nggak tahu sampai kapan kita bakal sedekat ini.
+tapi kalau suatu hari nanti hidup bikin kita sibuk 
+dengan jalan masing-masing,aku harap kamu nggak pernah lupa kalau pernah ada 
+seseorang yang seneng banget karena bisa kenal kamu.
+and that person is me. 🤍</p>
+    </div>
     </div>
 
-</body>
-    <!-- Greensock -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <!-- Sweetalert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="application/javascript" src="./script/main.js"></script>
+      <!-- HARAPAN -->
+      <div class="five">
+        <p class="idea-1">
+          happy birthday 🤍
+          semoga umur baru ini membawa lebih banyak bahagia,
+          lebih sedikit air mata, dan banyak alasan buat kamu tersenyum 
+          tanpa harus pura-pura.
 
+          semoga semua doa yang kamu simpan diam-diam satu per satu menemukan 
+          jalannya buat jadi nyata.
+          jangan buru-buru dewasa, ya? 
+          kalau bisa, bahagia dulu yang banyak.
+
+          and if someday you look back at this little website,
+          i hope you smile and remember that on your birthday,
+          someone took the time to make this just for you.
+
+          someone who is really, really glad that you exist.
+          i'm glad it's you. always. ♡
+        </p>
+
+        <p class="idea-2">
+          khusus untuk rivaaa<br>
+          <strong>someone special</strong>.
+        </p>
+
+        <p class="idea-3">
+          <span>S</span><span>O</span>
+        </p>
+      </div>
+
+      <!-- FOTO DAN UCAPAN AKHIR -->
+      <div class="six">
+        <div class="profile-gallery">
+          <img src="./img/rivaaaaa1.jpeg" alt="Foto Rivaaa" class="profile-picture">
+          <img src="./img/rivaaa3.jpeg" alt="Foto Rivaaa" class="profile-picture">
+          <img src="./img/rivaa2.jpeg" alt="Foto Rivaaa" class="profile-picture">
+        </div>
+
+        <div class="wish">
+          <h2 class="wish-hbd">Happy Birthday!</h2>
+          <h5>semoga bahagia selalu, Rivaaa ♡</h5>
+        </div>
+      </div>
+
+      <!-- BALON -->
+      <div class="seven baloons" aria-hidden="true">
+        <img src="./img/ballon1.svg" alt="">
+        <img src="./img/ballon2.svg" alt="">
+        <img src="./img/ballon3.svg" alt="">
+        <img src="./img/ballon1.svg" alt="">
+        <img src="./img/ballon2.svg" alt="">
+        <img src="./img/ballon3.svg" alt="">
+        <img src="./img/ballon2.svg" alt="">
+        <img src="./img/ballon3.svg" alt="">
+        <img src="./img/ballon1.svg" alt="">
+        <img src="./img/ballon2.svg" alt="">
+        <img src="./img/ballon3.svg" alt="">
+        <img src="./img/ballon2.svg" alt="">
+        <img src="./img/ballon1.svg" alt="">
+        <img src="./img/ballon3.svg" alt="">
+        <img src="./img/ballon2.svg" alt="">
+        <img src="./img/ballon3.svg" alt="">
+        <img src="./img/ballon1.svg" alt="">
+        <img src="./img/ballon2.svg" alt="">
+        <img src="./img/ballon1.svg" alt="">
+        <img src="./img/ballon3.svg" alt="">
+      </div>
+
+      <!-- EFEK DEKORATIF -->
+      <div class="eight" aria-hidden="true">
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20"/></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20"/></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20"/></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20"/></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20"/></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20"/></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20"/></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20"/></svg>
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20"/></svg>
+      </div>
+
+      <!-- PENUTUP -->
+      <div class="nine">
+      </div>
+    </section>
+
+    <!-- GALERI KENANGAN -->
+    <section class="memories" id="memories">
+      <h2 class="memories-title">Our Little Memories ♡</h2>
+      <p class="memories-subtitle">a little piece of our story, just for you 🤍</p>
+
+      <div class="memory-gallery">
+        <article class="memory-card">
+          <img src="./img/image1.jpeg" alt="Foto bersama" loading="lazy">
+          <p>one of my favorite moments ♡</p>
+        </article>
+
+        <article class="memory-card">
+          <img src="./img/image2.jpeg" alt="Foto bersama" loading="lazy">
+          <p>just us, making memories together 🥹</p>
+        </article>
+
+        <article class="memory-card">
+          <img src="./img/image3.jpeg" alt="Foto bersama" loading="lazy">
+          <p>little moments, precious memories ✨</p>
+        </article>
+
+        <article class="memory-card">
+          <img src="./img/image4.jpeg" alt="Foto bersama loading="lazy">
+          <p>a moment worth remembering ♡</p>
+        </article>
+
+        <article class="memory-card">
+          <img src="./img/image5.jpeg" alt="Foto bersama" loading="lazy">
+          <p>memories i'll always be grateful for ♡</p>
+        </article>
+      </div>
+
+      <p class="memories-ending">
+        maybe someday, we'll look at these pictures
+        and miss the little moments we didn't know
+        were so special.
+
+        thank you for being part of my story, rivaaa. ♡
+      </p>
+
+      <button class="replay-bottom" id="replay-bottom" type="button">
+        Watch it again ♡
+      </button>
+    </section>
+  </main>
+</body>
 </html>

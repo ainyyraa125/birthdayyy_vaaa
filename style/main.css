@@ -69,11 +69,13 @@ body {
   right: 5px;
 }
 
-.five p {
-  font-size: 2rem;
-  left: 0;
-  position: absolute;
-  right: 0;
+.five .text-box {
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
 }
 
 .idea-3 strong {
@@ -86,14 +88,15 @@ body {
   font-size: 4rem;
 }
 
-.idea-5 span, .idea-6 span, .wish-hbd span {
+.idea-5 span,
+.idea-6 span,
+.wish-hbd span {
   display: inline-block;
 }
 
-.idea-6 span{
+.idea-6 span {
   font-size: 15rem;
 }
-
 
 .six {
   position: relative;
@@ -105,13 +108,11 @@ body {
   display: inline-block;
   height: 350px;
   max-width: 100%;
-  /* height: auto; */
 }
 
 .six .hat {
   left: 41.5%;
   position: absolute;
-  /* transform: scale(0.1); */
   top: -35%;
   width: 80px;
 }
@@ -133,7 +134,8 @@ body {
   left: 30%;
 }
 
-.seven, .eight {
+.seven,
+.eight {
   height: 100vh;
   position: fixed;
   top: 0;
@@ -225,7 +227,7 @@ body {
   z-index: 3;
 }
 
-/* Media Queries */
+/* MEDIA QUERIES ASLI */
 @media screen and (max-height: 1000px) {
   .six .hat {
     left: 40%;
@@ -273,7 +275,6 @@ body {
   }
 
   .six .hat {
-    /* top: -20px; */
     width: 50px;
   }
 
@@ -288,5 +289,136 @@ body {
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
+  }
+}
+
+/* =====================================
+   GALERI FOTO KENANGAN RIVAAA 🤍
+===================================== */
+
+.memories {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  box-sizing: border-box;
+  padding: 50px 20px;
+  overflow: visible;
+  background: linear-gradient(180deg, #fff5f7, #ffe8ef);
+  color: #634653;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.memories-title {
+  margin: 0 0 12px;
+  font-size: clamp(25px, 5vw, 38px);
+  font-weight: 400;
+}
+
+.memories-subtitle {
+  margin: 0 auto 35px;
+  color: #9b7886;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* FOTO OTOMATIS TERSUSUN */
+.memory-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* BINGKAI FOTO */
+.memory-card {
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 12px 12px 18px;
+  background: #fff;
+  border: 1px solid #f3dce5;
+  border-radius: 6px;
+  box-shadow: 0 7px 20px rgba(120, 65, 85, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.memory-card:nth-child(odd) {
+  transform: rotate(-2deg);
+}
+
+.memory-card:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+/* EFEK SAAT FOTO DISENTUH */
+.memory-card:hover {
+  transform: translateY(-6px) rotate(0deg) scale(1.03);
+  box-shadow: 0 12px 28px rgba(120, 65, 85, 0.2);
+}
+
+/* UKURAN FOTO */
+.memory-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
+
+/* CAPTION FOTO */
+.memory-card p {
+  margin: 14px 2px 0;
+  color: #806371;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+/* PENUTUP GALERI */
+.memories-ending {
+  max-width: 570px;
+  margin: 40px auto 0;
+  color: #886777;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 2;
+}
+
+/* TABLET DAN HP */
+@media screen and (max-width: 768px) {
+  .memories {
+    padding: 40px 16px;
+  }
+
+  .memory-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+/* HP KECIL */
+@media screen and (max-width: 400px) {
+  .memory-gallery {
+    gap: 12px;
+  }
+
+  .memory-card {
+    padding: 7px 7px 12px;
+  }
+
+  .memory-card p {
+    font-size: 10px;
+  }
+
+  .memories-ending {
+    font-size: 12px;
   }
 }
